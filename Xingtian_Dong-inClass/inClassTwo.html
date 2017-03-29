@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>In Class Assignment 2</title>
+	<link rel="stylesheet" href="./css/inClassTwo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./js/inclass.js"></script>
+</head>
+<body onload="fade()">
+	<div id="accordion">
+		<h3>Transition1</h3>
+		<div>123</div>
+  </div>
+	<h1>Transition2</h1>
+	<p id="demo">Show what is it?</p>
+	<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click</button>
+  <h1>Transition3<h1>
+	<img border="0" height="100" name="u" src="./image/a.jpg" width="176" ">
+	<script language="JavaScript">
+	var b = 1;
+	var c = true;
+	function fade(){
+	if(document.all);
+	if(c == true) {
+	  b++;
+	}
+	if(b==100) {
+	  b--;
+	  c = false
+	}
+	if(b==10) {
+	  b++;
+	  c = true;
+	}
+	if(c == false) {
+	  b--;
+	}
+	u.width=150 + b;
+	u.height=125 - b;
+	setTimeout("fade()",50);
+	}
+	</script>
+	<script language="JavaScript">
+	<!-- hide
+	function goHist(a)
+	{
+	   history.go(a);
+	}
+	</script>
+	<h1>Transition4</h1>
+	 <p id="t4">Disapear</p>
+	<a href="javascript:void(0)" onclick="hide()">Hide</a>
+  <script>
+  function hide(){
+  var t4 = document.getElementById("t4")
+  t4.style.display="none"
+  }
+  </script>
+	<h1>Animation</h1>
+	<h4>go go go</h4>
+</body>
+</html>
